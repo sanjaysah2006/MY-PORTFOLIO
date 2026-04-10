@@ -250,10 +250,10 @@ export default function Portfolio() {
         <section id="about" className="pf-hero">
           <div className="pf-hero-copy">
             <p className="pf-kicker">Computer engineering student / developer / problem solver</p>
-            <h1 className="pf-hero-title">
+            <h2 className="">
               Building <span id="pf-hero-title">{typed}</span>
               <i className="pf-cursor" />
-            </h1>
+            </h2>
             <p className="pf-hero-text">
               I am Sanjay Kumar Sah, a Computer Engineering student at MM(DU) Mullana focused on building
               polished web applications, practical systems, and interfaces that feel thoughtful to use.
@@ -267,14 +267,21 @@ export default function Portfolio() {
               <a href="mailto:Sahsanjay2006@gmail.com" className="pf-btn pf-btn-primary">
                 Start a conversation
               </a>
-              <a href="/Resume.pdf" download className="pf-btn pf-btn-secondary">
+              <a href="/Resume.pdf" download className="pf-btn pf-btn-primary">
                 Download resume
               </a>
+              <a href="https://www.linkedin.com/in/sanjay-kumar-sah-52b392294" target="_blank" rel="noreferrer" className="pf-btn pf-btn-primary">
+                Connect on LinkedIn
+              </a>
+            </div>
+            <div className="pf-intro-card" >
+              <p>Focused on full-stack development, UI craftsmanship, and building reliable products from idea to deployment.</p>
+              
             </div>
           </div>
 
           <div className="pf-hero-panel">
-            <div className="pf-portrait">
+            <div className="pf-portrait" >
               <div className="pf-portrait-frame">
                 <img id="pf-portrait-img"
                   src="/PP.png"
@@ -283,12 +290,7 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="pf-intro-card">
-              <p>Focused on full-stack development, UI craftsmanship, and building reliable products from idea to deployment.</p>
-              <a href="https://www.linkedin.com/in/sanjay-kumar-sah-52b392294" target="_blank" rel="noreferrer">
-                Connect on LinkedIn
-              </a>
-            </div>
+            
           </div>
         </section>
 
@@ -329,13 +331,15 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="pf-project-links">
+                    
                     {project.live && (
-                      <a href={project.live} target="_blank" rel="noreferrer">
+                      
+                      <a href={project.live} target="_blank" rel="noreferrer" className="pf-btn pf-btn-secondary">
                         View project
                       </a>
                     )}
                     {project.api && (
-                      <a href={project.api} target="_blank" rel="noreferrer">
+                      <a href={project.api} target="_blank" rel="noreferrer" className="pf-btn pf-btn-secondary">
                         API endpoint
                       </a>
                     )}
