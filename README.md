@@ -1,4 +1,3 @@
-```markdown
 # 🌐 Sanjay Kumar Sah - Portfolio
 
 Welcome to my personal portfolio website!  
